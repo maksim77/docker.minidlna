@@ -1,0 +1,10 @@
+minidlna:
+  image: maksim77/minidlna
+  ports:
+    - "8200:8200"
+  volumes:
+    - "/WD/Movies:/data"
+  container_name: minidlna
+  log_driver: "syslog"
+  net: "host"
+
